@@ -18,7 +18,7 @@ Welcome to my repository where I showcase my Flask app projects for practice and
 
 Here's a list of the projects included in this repository:
 
-1. [Dogzcreche ](project1/): Dogs managing app.
+1. [Dogzcreche ](dogzcreche/): An app where you can add your dog and see all the dogs that are in the creche.
 
    
 
