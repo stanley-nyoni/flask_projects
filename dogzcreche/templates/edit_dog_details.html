@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Edit {{ dog.name }} Info - Dogzcreche {% endblock %}
+{% block content %}
+    
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="mt-5">Edit {{ dog.name }} Info</h1>
+            <form action="" method="post">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" value="{{ dog.name }}" required>
+                </div>
+                <div class="mb-3">
+                    <label for="breed" class="form-label">Breed</label>
+                    <input type="text" class="form-control" id="breed" name="breed" value="{{ dog.breed }}">
+                </div>
+                <div class="mb-3">
+                    <label for="age" class="form-label">Age</label>
+                    <input type="text" class="form-control" id="age" name="age" value="{{ dog.age }}">
+                </div>
+                <div class="mb-3">
+                    <label for="owner" class="form-label">Owner</label>
+                    <input type="text" class="form-control" id="owner" name="owner" value="{{ dog.owner }}" required>
+                </div>
+                <div class="mb-3">
+                    <label for="owner_phone" class="form-label">Owner Phone</label>
+                    <input type="text" class="form-control" id="owner_phone" name="owner_phone" value="{{ dog.owner_phone }}" required>
+                </div>
+                <div class="mb-3">
+                    <label for="owner_email" class="form-label">Owner Email</label>
+                    <input type="email" class="form-control" id="owner_email" name="owner_email" value="{{ dog.owner_email }}">
+                </div>
+                <div class="mb-3">
+                    <label for="notes" class="form-label">Notes</label>
+                    <textarea class="form-control" id="notes" name="notes">{{ dog.notes }}</textarea>
+                </div>
+                <div class="mb-3 d-flex justify-content-between align-items-center">
+                    <a href="{{url_for('dog_detail', id=dog.id)}}" class="btn btn-danger">Cancel</a>
+                    <button type="submit" class="btn btn-primary">Update Dog</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

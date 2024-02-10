@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %} About - Dogzcreche {% endblock %}
+{% block content %}
+    <div class="container">
+        <div>
+            <h1 class="mt-5">About Dogzcreche</h1>
+            <p class="lead">Dogzcreche is a place where you can add your dog and see all the dogs that are in the creche.</p>
+            <p class="lead">You can add a new dog by clicking the button below.</p>
+            <a href="{{ url_for('add_new_dog')}}" class="btn btn-primary">Add New Dog</a>
+
+        </div>
+
+        <div class="mt-5">
+            <h3>Our Story</h3>
+            <p class="lead">Dogzcreche was founded in 2021 by a group of dog lovers who wanted to create a place where dogs could be cared for and loved while their owners were away. We have a team of dedicated staff who are passionate about dogs and are committed to providing the best care for your dog.</p>
+
+            <div>
+                <h3>How We Track Your Dog's Information</h3>
+                <p class="lead">When you add a new dog to our creche, we store your dog's name and other important information in a secure database. This allows us to keep track of all the dogs in our care and provide you with regular updates about your dog's activities and well-being. Rest assured, your dog's information is kept confidential and is used solely for the purpose of providing the best care possible.</p>
+            </div>
+
+            <div>
+                <h3>Advantages of Using Our App</h3>
+                <ul>
+                    <li><p class="lead">Ease of Use: Our app is user-friendly, making it easy for you to add your dog, update information, and check on your dog's status.</p></li>
+                    <li><p class="lead">Real-Time Updates: Get instant updates about your dog's activities and well-being.</p></li>
+                    <li><p class="lead">Secure Data Storage: We store your dog's information in a secure database, ensuring confidentiality and privacy.</p></li>
+                    <li><p class="lead">Personalized Care Plans: Based on the information you provide, we create a personalized care plan for your dog.</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

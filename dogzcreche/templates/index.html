@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+
+
+{% block content %}
+ <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="mt-5">Welcome to Dogzcreche</h1>
+            <p class="lead">Welcome to Dogzcreche, a place where you can add your dog and see all the dogs that are in the creche.</p>
+            <p class="lead">You can add a new dog by clicking the button below.</p>
+            <a href="{{ url_for('add_new_dog')}}" class="btn btn-primary">Add New Dog</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="mt-5">All Dogs</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Breed</th>
+                        <th>Age</th>
+                        <th>Owner</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for dog in dogs %}
+                    <tr>
+                        <td><a href="{{ url_for('dog_detail', id=dog.id)}}" class="link-offset-2 link-underline link-underline-opacity-0 text-dark">{{ dog.name}}</a></td>
+                        <td><a href="{{ url_for('dog_detail', id=dog.id)}}" class="link-offset-2 link-underline link-underline-opacity-0 text-dark">
+                            {% if dog.breed %}
+                                {{ dog.breed }}
+                            {% else %}
+                                Unknown
+                            {% endif %}
+                        </a></td>
+                        <td>
+                            {% if dog.age %}
+                                {{ dog.age }}
+                            {% else %}
+                                --
+                            {% endif %}
+                        </td>
+                        <td>{{ dog.owner }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+ </div>
+{% endblock %}

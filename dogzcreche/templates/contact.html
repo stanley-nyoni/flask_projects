@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %} Contact - Dogzcreche {% endblock %}
+{% block content %}
+    
+    <div class="container">
+        <h1 class="mt-5">Contact Us</h1>
+        <div class="row justify-content-between align-items-start">
+            <div class="col-5">
+                <form action="" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+            <div class="col-5">
+                <h4>Contact Details</h4>
+                <p class="lead">You can contact us using the details below:</p>
+                <p class="lead">Phone: 123-456-7890</p>
+                <p class="lead">Email: dogzcreche@team.com </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
