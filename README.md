@@ -31,7 +31,7 @@ To get a local copy of any project up and running, follow these simple steps:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/flask-app-projects.git
+    git clone https://github.com/your-username/flask_projects.git
     ```
 
 2. Navigate to the project directory:
