@@ -58,3 +58,7 @@ Contributions to DogzCreche are welcome! If you'd like to contribute, please fol
 ## License
 
 DogzCreche is licensed under the [MIT License](LICENSE).
+
+## Author
+
+<mqelisinyoni77@gmail.com>
