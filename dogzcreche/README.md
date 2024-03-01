@@ -7,6 +7,8 @@ Welcome to DogzCreche, an application where you can add your dog to a virtual cr
 - **Add Dogs**: Add your dog to the creche by providing basic information such as name, breed, age, etc.
 - **View Dogs**: See a list of all dogs currently in the creche along with their details.
 - **Update and Remove Dogs**: Update or remove your dog's information if needed.
+- **Register Accounts**: Users can register their accounts using email, username and password.
+- **Login**: Users can log in to their accounts using email and password.
 
 ## Getting Started
 
